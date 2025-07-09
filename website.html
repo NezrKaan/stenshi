@@ -327,11 +327,11 @@
             setTimeout(() => {
                 asciiElement.textContent = frames[currentFrame];
                 currentFrame = (currentFrame + 1) % frames.length;
-            }, 150);
+            }, 200);
             
             setTimeout(() => {
                 container.classList.remove('fade-transition');
-            }, 100);
+            }, 0);
         }
 
         // Enhanced Typing Effect
