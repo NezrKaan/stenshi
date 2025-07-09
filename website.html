@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>5+3n5h+'s Website</title>
+    <title>Stenshi</title>
     <style>
         * {
             margin: 0;
@@ -200,7 +200,7 @@
     
     <div class="status-bar">
         <div>Website v3.1.4</div>
-        <div>STATUS: <span id="status">INFILTRATING</span></div>
+        <div>STATUS: <span id="status">Loading...</span></div>
     </div>
     
     <div class="terminal">
@@ -383,7 +383,7 @@
             
             if (Math.random() < 0.50) { // 50% chance
                 let glitchedText = originalText;
-                const glitchChars = '█▓▒░╬╫╪┼■□▪▫◘◙☠💀⚡🔥';
+                const glitchChars = '█▓▒░╬╫╪┼■□▪▫◘◙☠⚡';
                 
                 // Multiple glitch points
                 for (let i = 0; i < 8; i++) {
@@ -403,7 +403,7 @@
         // Enhanced Status updates
         function updateStatus() {
             const statusElement = document.getElementById('status');
-            const statuses = ['Why', 'Not' ];
+            const statuses = ['Online', 'oNline', 'onLine', 'onlIne', 'onliNe', 'onlinE', 'online' ];
             const colors = ['#00ff00', '#ff0080', '#ffff00', '#ff0000', '#00ffff', '#ff4500', '#9400d3'];
             
             const randomStatus = statuses[Math.floor(Math.random() * statuses.length)];
@@ -420,7 +420,7 @@
             typeMessage();
             
             // Start ASCII animation - slower for better viewing
-            setInterval(animateASCII, 2100);
+            setInterval(animateASCII, 100);
             
             // Add glitch effects
             setInterval(addGlitchEffect, 2500);
