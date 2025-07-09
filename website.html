@@ -362,7 +362,7 @@
                     setTimeout(() => {
                         messageIndex = (messageIndex + 1) % messages.length;
                         isTyping = false;
-                        setTimeout(typeMessage, 2000);
+                        setTimeout(typeMessage, 1000);
                     }, 200);
                 }
             }, 50);
@@ -437,10 +437,10 @@
             setInterval(animateASCII, 2000);
             
             // Add glitch effects
-            setInterval(addGlitchEffect, 1200);
+            setInterval(addGlitchEffect, 500);
             
             // Update status periodically
-            setInterval(updateStatus, 2500);
+            setInterval(updateStatus, 1000);
             
             // Initial frame
             animateASCII();
