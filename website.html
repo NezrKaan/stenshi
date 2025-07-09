@@ -237,6 +237,19 @@
  \\)                                                                /           
                                                                   /            
                                                                  /             `,
+
+
+  // Frame 1: Skull
+            `                                                                               
+  ________   ___________    _______   _____  ___     ________    __    __     __     
+ /"       ) ("     _   ")  /"     "| (\"   \|"  \   /"       )  /" |  | "\   |" \    
+(:   \___/   )__/  \\__/  (: ______) |.\\   \    | (:   \___/  (:  (__)  :)  ||  |   
+ \___  \        \\_ /      \/    |   |: \.   \\  |  \___  \     \/      \/   |:  |   
+  __/  \\       |.  |      // ___)_  |.  \    \. |   __/  \\    //  __  \\   |.  |   
+ /" \   :)      \:  |     (:      "| |    \    \ |  /" \   :)  (:  (  )  :)  /\  |\  
+(_______/        \__|      \_______)  \___|\____\) (_______/    \__|  |__/  (__\_|_) 
+                                                                                     `,
+            
             
             // Frame 2: HACK text
             `                                                                                                                                                              
@@ -498,7 +511,7 @@
             setInterval(addGlitchEffect, 2500);
             
             // Update status periodically
-            setInterval(updateStatus, 2000);
+            setInterval(updateStatus, 1000);
             
             // Initial frame
             animateASCII();
@@ -509,7 +522,7 @@
         
         // Add some keyboard effects
         document.addEventListener('keydown', function(e) {
-            if (Math.random() < 0.3) {
+            if (Math.random() < 0.6) {
                 addGlitchEffect();
             }
         });
