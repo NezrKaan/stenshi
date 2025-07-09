@@ -199,7 +199,7 @@
     <div class="matrix-rain" id="matrix"></div>
     
     <div class="status-bar">
-        <div>Website v3.1.4</div>
+        <div>Website V1.X1</div>
         <div>STATUS: <span id="status">Loading...</span></div>
     </div>
     
@@ -210,7 +210,7 @@
     </div>
     
     <div class="typing-text">
-        <span id="typingOutput"></span><span class="cursor">█</span>
+        <span id="typingOutput"></span><span class="cursor">Type here</span>
     </div>
 
     <script>
@@ -420,13 +420,13 @@
             typeMessage();
             
             // Start ASCII animation - slower for better viewing
-            setInterval(animateASCII, 100);
+            setInterval(animateASCII, 2000);
             
             // Add glitch effects
             setInterval(addGlitchEffect, 2500);
             
             // Update status periodically
-            setInterval(updateStatus, 1000);
+            setInterval(updateStatus, 100);
             
             // Initial frame
             animateASCII();
