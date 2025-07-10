@@ -96,13 +96,27 @@
         }
         
         .status-bar {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            font-size: 14px;
-            opacity: 0.8;
-            z-index: 100;
-        }
+      padding: 10px;
+      background-color: #111;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .status-bar a {
+      color: 
+#00ff00;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .status-bar a:hover {
+      color: 
+#b300ff; /* Purple hover */
+    }
+    .rainbow-text {
+      animation: rainbow 2s infinite alternate;
+      font-weight: bold;
+      text-shadow: none;
+    }
         
         .typing-text {
             position: fixed;
@@ -199,12 +213,15 @@
     <div class="scanlines"></div>
     <div class="matrix-rain" id="matrix"></div>
     
-<div class="status-bar">
-  <div>Website V1.X1</div>
-  <div>STATUS: <span id="status">Loading...</span></div>
-  <div><a href="https://www.linkedin.com/in/n-kaan-bilgehan" target="_blank" rel="noopener" style="color: #00ff00; text-decoration: none;">My LinkedIn</a></div>
-  <div><a href="https://github.com/NezrKaan" target="_blank" rel="noopener" style="color: #00ff00; text-decoration: none;">My GitHub</a></div>
-</div>
+ <div class="status-bar">
+    <div>Website V1.X1</div>
+    <div>STATUS: <span id="status">Loading...</span></div>
+    <div class="rainbow-text">Follow my:</div>
+    <div class="links">
+      <div><a href="https://www.linkedin.com/in/n-kaan-bilgehan" target="_blank" rel="noopener">LinkedIn</a></div>
+      <div><a href="https://github.com/NezrKaan" target="_blank" rel="noopener">GitHub</a></div>
+    </div>
+  </div>
     
     <div class="terminal">
         <div class="ascii-container">
