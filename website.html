@@ -234,7 +234,29 @@
  /  ########/       ##      ######/    ###   ###  / #### /   ##     ##   ### / 
 /     #####          ##      #####      ###   ###    ###/     ##    ##    ##/  
 |                                                                   /          
+ \\)                                                                /            // Frame 
+            `                                                                               
+      #######                                                  /               
+    /       ###                                              #/          #     
+   /         ##      #                                       ##         ###    
+   ##        #      ##                                       ##          #     
+    ###             ##                                       ##                
+   ## ###         ########    /##    ###  /###       /###    ##  /##   ###     
+    ### ###      ########    / ###    ###/ #### /   / #### / ## / ###   ###    
+      ### ###       ##      /   ###    ##   ###/   ##  ###/  ##/   ###   ##    
+        ### /##     ##     ##    ###   ##    ##   ####       ##     ##   ##    
+          #/ /##    ##     ########    ##    ##     ###      ##     ##   ##    
+           #/ ##    ##     #######     ##    ##       ###    ##     ##   ##    
+            # /     ##     ##          ##    ##         ###  ##     ##   ##    
+  /##        /      ##     ####    /   ##    ##    /###  ##  ##     ##   ##    
+ /  ########/       ##      ######/    ###   ###  / #### /   ##     ##   ### / 
+/     #####          ##      #####      ###   ###    ###/     ##    ##    ##/  
+|                                                                   /          
  \\)                                                                /           
+                                                                  /            
+                                                                 /             `,
+
+
                                                                   /            
                                                                  /             `,
 
@@ -2180,7 +2202,39 @@
         // Enhanced Status updates
         function updateStatus() {
             const statusElement = document.getElementById('status');
-            const statuses = ['Online', 'oNline', 'onLine', 'onlIne', 'onliNe', 'onlinE', 'online' ];
+            const statuses = [  "online",
+  "Online",
+  "oNline",
+  "oNLine",
+  "0nlINE",
+  "oAliNe",
+  "onlinE",
+  "ONline",
+  "oNLine",
+  "OnlINe",
+  "ONLINe",
+  "online1",
+  "onL1n3",
+  "0nl1n3",
+  "0nline",
+  "1online1",
+  "0nline0",
+  "0nlin3",
+  "0Nlin3",
+  "onl1n3",
+  "Onl1n3",
+  "0nL1Ne",
+  "0nL1n3",
+  "0nL!N3",
+  "0nL!n3!",
+  "_online_",
+  "-online-",
+  ".online.",
+  "*online*",
+  "onl1n3!",
+  "!0nlin3!",
+  "[online]",
+  "{0nlin3}" ];
             const colors = ['#00ff00', '#ff0080', '#ffff00', '#ff0000', '#00ffff', '#ff4500', '#9400d3'];
             
             const randomStatus = statuses[Math.floor(Math.random() * statuses.length)];
