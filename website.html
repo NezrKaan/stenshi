@@ -2301,28 +2301,21 @@
             output.textContent = '';
             charIndex = 0;
             
-            const typeInterval = setInterval(() => {
-                if (charIndex < currentMessage.length) {
-                    output.textContent += currentMessage[charIndex];
-                    charIndex++;
-                    
-                    // Random typing speed for realism
-                    const nextDelay = 30 + Math.random() * 120;
-                    clearInterval(typeInterval);
-                    setTimeout(() => {
-                        const newInterval = setInterval(arguments.callee, nextDelay);
-                        typeInterval.id = newInterval;
-                    }, nextDelay);
-                } else {
-                    clearInterval(typeInterval);
-                    setTimeout(() => {
-                        messageIndex = (messageIndex + 1) % messages.length;
-                        isTyping = false;
-                        setTimeout(typeMessage, 100);
-                    }, 50);
-                }
-            }, 50);
-        }
+            function typeChar() {
+    if (charIndex < currentMessage.length) {
+        output.textContent += currentMessage[charIndex];
+        charIndex++;
+        const nextDelay = 30 + Math.random() * 120;
+        setTimeout(typeChar, nextDelay);
+    } else {
+        setTimeout(() => {
+            messageIndex = (messageIndex + 1) % messages.length;
+            isTyping = false;
+            setTimeout(typeMessage, 100);
+        }, 50);
+    }
+}
+typeChar();
 
         // Enhanced Matrix Rain Effect
         function createMatrixRain() {
